@@ -1,0 +1,66 @@
+.content{
+	height:700px;
+	width:100%;
+}
+#header{
+	height: 130px;
+	width: 100%;
+	background-color: #CCCCCC;
+}
+button{
+	height: 30px;
+	width: 80px;
+	background-color: red;
+	color: #F5F5F5;
+}
+button:hover{
+	background-color: burlywood;
+}
+a:link{
+	color: yellow;
+}
+
+a:visited{
+	color: blueviolet;
+}
+
+a:hover{
+	color: blue;	
+}
+a:active{
+	color: green;
+}
+#header>div{
+	height: 100px;
+	width: 100%;
+	background-color: yellowgreen;
+}
+#header div{	
+	color: white;
+}
+.bodys{
+	height: 500px;
+	width: 100%;
+}
+table{
+	width: 100%;
+	border:1px solid darkslategrey;
+}
+table caption{
+	height: 60px;
+	background-color: lightgoldenrodyellow;
+	font-size: 30px;
+	line-height: 60px;
+}
+table caption+*{
+	background-color: red;
+}
+table tr~*{
+	height: 50px;
+	background-color: #F4F4F4;
+}
+table tr td{
+	height: 50px;
+	text-align: center;
+	border:1px solid darkslategrey;
+}

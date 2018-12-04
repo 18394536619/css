@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+		ul.nav  {
+			background-color: #336666;
+		}
+		ul.nav::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		ul.nav a {
+			color: #ffffff;
+		}
+		ul.nav > li {
+			float: left;
+			width: 120px;
+			text-align: center;
+		}
+
+		ul.nav ul.sub-nav {
+			position: absolute;
+			display: none;
+		}
+		ul.nav > li:hover {
+			background-color: lightblue;
+		}
+		ul.nav > li:hover > ul.sub-nav {
+			display: block;
+		}
+
+
+		.clear {
+			clear: both;
+		}
+		.banner {
+			height: 300px;
+			background-color: pink;
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="">首页</a></li>
+		<li>
+			<a href="">院系设计</a>
+			<ul class="sub-nav">
+				<li><a href="#">机械学院</a></li>
+				<li><a href="#">软件学院</a></li>
+				<li><a href="#">艺术学院</a></li>
+			</ul>
+		</li>
+		<li><a href="">招生就业</a></li>
+	</ul>
+	<div class="banner"></div>
+
+</body>
+</html>

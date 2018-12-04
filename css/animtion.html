@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animation</title>
+		<style>
+			div{
+				height: 150px;
+				width: 150px;
+				background-color: #CCC8C5;
+				animation-name: move;
+				animation-delay: 2s;
+				animation-duration: 10s;
+				animation-timing-function:ease-out;
+			}
+			@keyframes move{
+				0%{
+					margin-top: 0;
+					margin-left: 0;
+					background-color: #C4F062;
+				}
+				10%{
+					margin-top: 20px;
+					margin-left: 20px;
+					transform: rotateX(45deg);
+					background-color: yellow;
+				}
+				40%{
+					margin-top: 40px;
+					margin-left: 40px;
+					background-color: blue;
+					transform: scale(10px,10px);
+				}
+				60%{
+					margin-top: 60px;
+					margin-left: 60px;
+					background-color: blueviolet;
+					transform: skewX(45deg);
+				}
+				80%{
+					margin-top: 80px;
+					margin-left: 80px;
+					background-color: brown;
+					transform: translateX(20);
+				}
+				100%{
+					margin-top: 100px;
+					margin-left: 100px;
+					background-color: green;
+					transform: rotate(60deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

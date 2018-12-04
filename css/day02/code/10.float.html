@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>float</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    .box{
+      width:100px;
+      height: 100px;
+      border:1px solid red;
+    }
+    .two{
+      float: left;
+      margin-left:105px;
+      word-break: break-all;
+      background-color: yellow;
+    }
+    /*three必须清楚浮动，如果不清除，three会上移*/
+    .three{
+    	clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="box one">123</div>
+  <div class="box two">456</div>
+  <div class="box three">789</div>
+</body>
+</html>

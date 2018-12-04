@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>display</title>
+		<style>
+			/*解决display:inline-block带来的边距问题
+			 1.font-size:0
+			 2.letter-spacing:-4px
+			 3.让两个元素紧相邻，不留空间*/
+			.content{
+				/*font-size: 0;*/
+				/*letter-spacing:-6px;*/
+				height: 400px;
+				width: 400px;
+				background-color: #CCCCCC;
+				
+			}
+			.d1{
+				/*子元素都有内容，上边缘对齐，如果想下边缘对齐，两子元素中都加overflow: hidden*/
+				/*一个有内容时，使用overflow: hidden实现下边缘对齐*/
+				/*overflow: hidden;*/
+				
+				display: inline-block;
+				height: 100px;
+				width: 100px;
+				border: 1px solid black;
+				
+			}
+			.d2{
+				/*overflow: hidden;*/
+				
+				display: inline-block;
+				height: 150px;
+				width: 100px;
+				border: 1px solid black;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="d1">sdfgnhmkj</div>
+			<div class="d2">发v光标</div>
+			
+		</div>
+	</body>
+</html>

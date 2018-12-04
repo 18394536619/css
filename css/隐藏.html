@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				height: 500px;
+				width: 500px;
+				overflow: hidden;
+				border: 1px solid black;
+				
+			}
+			.box div{
+				height: 100px;
+				width: 100px;
+				border: 1px solid red;
+				/*float: left;*/
+				margin-left: 5px;
+			}
+			.box .div2{
+				/*隐藏div2*/
+				visibility: hidden;
+			}
+			.box .div3{
+				/*隐藏div3*/
+				display: none;
+			}
+			.box .div5{
+				/*隐藏div5超出部分*/
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>1</div>
+			<div class="div2">2</div>
+			<div class="div3">3</div>
+			<div>4</div>
+			<div class="div5">5</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .container{
+            width:226px;
+            height: 330px;
+            background: #343434;
+            margin:0 auto ;
+        }
+        .circles{
+            padding: 36px;/*动画*/
+            height: 226px;
+
+            -webkit-animation-name:wobble;
+            -webkit-animation-duration: 4.4s;   
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-iteration-count: infinite;
+
+
+        }
+        .circles > .outer{
+            height: 100%;
+            border:5px solid #9b9b9b;
+            padding: 10px;/*动画*/
+
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            border-radius:50%;
+
+			/* 规定需要绑定到选择器的 keyframe 名称 */
+            -webkit-animation-name:outer_wobble;
+            /* 动画持续时间*/
+            -webkit-animation-duration: 4.4s;  /*9s*/
+            /*动画频率   线性变化*/
+            -webkit-animation-timing-function: linear;
+            /*动画延迟时间*/
+            -webkit-animation-delay: 0s;
+            /*定义循环资料infinite为无限次*/
+            -webkit-animation-iteration-count: infinite;
+        }
+        .circles > .outer > .inner{
+            height: 100%;
+            border:15px solid green;/*我很高兴*/
+
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            border-radius:50%;
+        }
+
+        @-webkit-keyframes outer_wobble {
+            20% {
+                padding: 20px;
+            }
+            40% {
+                padding:10px;
+            }
+            65%{
+                padding:22px;
+            }
+            100%{
+                padding: 10px;
+            }
+        }
+
+        @-webkit-keyframes wobble {
+            20% {
+               padding: 26px;
+            }
+            40% {
+                padding:36px;
+            }
+            100%{
+                padding:36px;
+            }
+        }
+
+        .text{
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circles">
+            <!--外部圆-->
+            <div class="outer">
+                <!--内部-->
+                <div class="inner">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            我很高兴
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>

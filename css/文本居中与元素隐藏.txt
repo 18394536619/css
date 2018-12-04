@@ -1,0 +1,14 @@
+隐藏：
+	1.display:none			不保留原有空间
+	  display:block
+	2.visibility:hidden		保留原有空间
+	  visibility：visible
+	3.overflow:hidden		隐藏超出部分（用于父元素）
+文本居中：
+	水平：
+		1.text-align:center
+	垂直居中
+		1.line-height:10px;
+		2.vertical-align: middle;(用于内联元素和table-cell);
+		2.display:table-cell;
+		  vertical-align: middle;

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.outer{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			
+		}
+		button:hover+div{
+			animation:animation 4s ease-in;
+		}
+		@keyframes animation{
+			0%{
+				transform: translate(0px) rotateY(0deg);
+			}
+			100%{
+				transform: translate(300px) rotateY(10deg);
+				transform-style: preserve-3d;
+			}
+		}
+	</style>
+</head>
+<body>
+	<button>鼠标滑我</button>
+	<div class="outer"></div>
+</body>
+</html>

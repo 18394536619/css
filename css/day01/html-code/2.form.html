@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="register.action" method="get">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="url" name="url">
+
+    <!-- formaction用于提交按钮上，提交到不同的后台处理程序 -->
+    <input type="image" src="./images/1.jpg" alt="图片丢了" formaction="regiter1.action" formmethod="post" formenctype="" formnovalidate="true" formtarget="_blank">
+    
+    <!-- 默认提交 -->
+    <input type="submit" >
+  </form>
+</body>
+</html>

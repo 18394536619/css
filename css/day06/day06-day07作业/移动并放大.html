@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+		button:hover+div{
+			animation:animation 4s ease-in;
+		}
+		@keyframes animation{
+			0%{
+				transform: translate(0px) scale(0);
+			}
+			100%{
+				transform: translate(300px) scale(1.2);
+			}
+		}
+	</style>
+</head>
+<body>
+	<button>滑过我</button>
+	<div></div>
+</body>
+</html>

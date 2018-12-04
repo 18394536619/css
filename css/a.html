@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>a</title>
+		<style>
+			button{
+				height: 30px;
+				width: 60px;
+				background-color: gainsboro;
+			}
+			.one{
+				height: 100px;
+				width: 100px;
+				background-color: red;
+			}
+			button:hover+div{
+				animation-name: move;
+				animation-duration: 10s;
+				animation-timing-function: ease-in;
+			}
+			@keyframes move{
+				0%{
+					transform: translateX(0px) scale(1);
+				}
+				100%{
+					transform: translateX(400px) scale(2);
+				}
+			}
+		</style>
+			
+	</head>
+	<body>
+		<button>点击我</button>
+		<div class="one"></div>
+	</body>
+</html>

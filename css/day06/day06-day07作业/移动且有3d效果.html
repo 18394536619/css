@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+		div:hover{
+			animation:animation 4s ease-in;
+		}
+		@keyframes animation{
+			0%{
+				transform: translate(0px) rotateY(0deg);
+			}
+			100%{
+				transform: translate(300px) rotateY(90deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

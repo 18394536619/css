@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex的等比例划分</title>
+  <style>
+    *{
+      margin:0px;
+      padding: 0px;
+    }
+    .parent{
+      width: 100%;
+      border:1px solid red;
+      display: flex;
+      flex-direction: row;
+     /* align-items: flex-start;*/
+    justify-content: flex-start;
+    }
+    .son{
+      /*width:100px;*/
+      height: 100px;
+      background-color: pink;
+      margin:10px;
+      flex:1;
+    }
+    .son:nth-child(2){
+      flex:2;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="son">1</div>
+    <div class="son">2</div>
+    <div class="son">3</div>
+  </div>
+</body>
+</html>
